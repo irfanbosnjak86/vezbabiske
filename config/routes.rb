@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   get "articles/new", to: "articles#new"
+  get "articles", to: "articles#index"
+  post "articles", to: "articles#create"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
