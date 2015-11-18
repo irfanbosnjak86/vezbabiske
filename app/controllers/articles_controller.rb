@@ -7,6 +7,8 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    @article = Article.create(params[:article])
+    binding.pry
     redirect_to articles_path
   end
 end
